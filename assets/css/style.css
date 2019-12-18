@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+.wrapper{
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+p, form{
+    font-size: 18px;
+    line-height: 30px;
+    color: #777777;
+}
+
+a:hover{
+    background-color: darkgrey;
+}
+
+input, textarea{
+    width: 100%;
+    border-color: #dddddd;
+    border: 1px groove;
+    margin: 8px 0;
+}
+
+input{
+    padding: 5px;
+}
+
+textarea{
+    padding: 80px;
+}
+
+#mainheader{
+    display: inline-block;
+    background: #ffffff;
+    padding: 50px;
+    border-style: solid;
+    border-color: #dddddd;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#pattern{
+    width: 100%;
+    background: url("../images/5-dots.png");
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    border-right: 1px solid #cccccc;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #777777;
+    padding: 14px 16px;
+}
+
+img{
+    float: left;
+    width: 30%;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+    margin-right: -45%;
+    margin-bottom: 20px;
+}
+
+.container .text{
+    position: absolute;
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 35%;
+    top: 87%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+#mainheaderborder{
+    padding: 1px;
+    background: #cccccc;
+    margin-top: -20px;
+}
+
+#navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4aaaa5;
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+h1,h2, h3{
+    color: #4aaaa5;
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+#footerborder{
+    border-top: 8px solid #4aaaa5;
+}
+
+#submit{
+    background: #4aaaa5;
+    display: inline-block;
+    padding:  10px 30px;
+    color: #ffffff;
+}
+
+.clearfix::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+footer{
+    background: #666666;
+    text-align: center;
+    padding: 30px;
+    color: #cccccc;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 980px){
+    .wrapper{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: auto;
+    }
+    
+    img{
+        width: 150px;
+        height: 150px;    
+    }
+
+    #navbar{
+        background: purple;
+        color: yellow;
+    }
+
+    #pattern{
+        background: url("../images/criss-cross.png")
+    }
+}
+
+@media screen and (max-width: 640px){
+    header footer ul img{
+        position: static;
+    }
+
+    img{
+        width: auto;
+        height: 80px;
+    }
+
+    #navbar{
+        font-size: 18px;
+        padding: 10px;
+        background: yellow;
+        color: purple;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
+    #pattern{
+        background: url("../images/circle-blues.png");
+    }
+}
